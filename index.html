@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons With Gradient</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Oswald:wght@700&display=swap');
+        
+        :root{
+            --primary-font : 'Open Sans', sans-serif;
+            --secondary-font : 'Oswald', sans-serif;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: url("Media/Background/background.jpg");
+            background-size: 100vw 100vh;
+        }
+
+        .title-text{
+            font-family: var(--secondary-font);
+            letter-spacing: 0.3px;
+            color: purple;
+        }
+
+        .btn{
+            margin-top: 25px;
+            height: 43px;
+            width: 180px;
+            font-family: var(--primary-font);
+            font-size: 18px;
+            letter-spacing: 0.3px;
+            border: none;
+            border-radius: 7px;
+            color: white;
+            cursor: pointer;
+        }
+
+        #btn-1{
+            background: linear-gradient(216deg, #ff0000 25%,#a04141 50%,#2d1111);
+        }
+        
+        #btn-1:hover{
+            border: 3px solid #a04141;
+            background: none;
+            color: #a04141;
+            transition: all 0.3s ease-in-out;
+        }
+
+        #btn-2{
+            background: linear-gradient(to right, #2c27ff,#312dca,#0b185d);
+        }
+
+        #btn-2:hover{
+            border: 3px solid #312dca;
+            background: none;
+            color: #312dca;
+            transition: all 0.3s ease-in-out;
+        }
+
+        #btn-3{
+            background: linear-gradient(to left, #3aff40,#15ba75,#0f5334);
+        }
+
+        #btn-3:hover{
+            border: 3px solid #15ba75;
+            background: none;
+            color: #15ba75;
+            transition: all 0.3s ease-in-out;
+        }
+
+    </style>
+</head>
+<body>
+    <h2 class="title-text">Different Buttons With Gradient</h2>
+    <button class="btn" id="btn-1">Submit</button>
+    <button class="btn" id="btn-2">Submit</button>
+    <button class="btn" id="btn-3">Submit</button>
+</body>
+</html>
